@@ -22,7 +22,7 @@ const Dashboard = () => {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      {/* Header */}
+     
       <div className="mb-8 animate-slide-up">
         <h1 className="text-4xl font-bold text-white">
           Hello, <span className="text-indigo-400">{user?.name}</span> 👋
@@ -30,7 +30,7 @@ const Dashboard = () => {
         <p className="text-gray-400 mt-2">Ready to ace your next interview?</p>
       </div>
 
-      {/* Stats */}
+  
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
         {[
           { label: 'Total Sessions', value: reports.length, icon: '🎯', color: 'indigo' },
@@ -49,7 +49,7 @@ const Dashboard = () => {
         ))}
       </div>
 
-      {/* Start Interview CTA */}
+     
       <div className="card glow-border mb-8 text-center py-12 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/10 to-purple-600/10"></div>
         <div className="relative z-10">
@@ -65,7 +65,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Past Reports */}
+   
       <div>
         <h2 className="text-xl font-bold text-white mb-4">Past Sessions</h2>
         {loading ? (
